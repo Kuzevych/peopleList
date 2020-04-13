@@ -25,7 +25,7 @@ export class PeopleListController extends Component {
                 fetchList={fetchList}
                 isFetching={peopleList.isFetching}
                 isFailedToFetch={peopleList.isFailedToFetch}
-                list={peopleList.value}
+                list={peopleList.values}
                 activePageIndex={this.state.activePageIndex}
                 handleClick={this.handleClick}
             />

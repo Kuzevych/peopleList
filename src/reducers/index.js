@@ -5,7 +5,7 @@ export const rootReducer = (state, action) => {
                 peopleList: {
                     isFetching: true,
                     isFailedToFetch: false,
-                    value: []
+                    values: []
                 }
             };
         case 'FETCH_PEOPLES':
@@ -13,7 +13,7 @@ export const rootReducer = (state, action) => {
                 peopleList: {
                     ...state.peopleList,
                     isFetching: false,
-                    value: action.payload.users,
+                    values: action.payload.users,
                 }
             };
         case 'FETCH_PEOPLES_ERROR':
