@@ -1,7 +1,7 @@
 export const initialState = {
     peopleList: {
         value: [],
-        isFetching: true,
+        isFetching: false,
         isFailedToFetch: false,
     }
 };
